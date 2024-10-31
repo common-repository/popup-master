@@ -1,0 +1,94 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: popup_master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-21 01:25+0400\n"
+"PO-Revision-Date: 2017-10-21 02:22+0400\n"
+"Last-Translator: edmon parker\n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es-ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz\n"
+"X-Loco-Source-Locale: en-US\n"
+"X-Loco-Project-Id: 32596\n"
+"X-Loco-Api-Version: 1.0.18 20171009-1"
+
+#: loco:59ea69de820ee99f7d8b4567
+msgid "Width"
+msgstr "Anchura"
+
+#: loco:59ea6edd820ee9f87d8b456a
+msgid "Height"
+msgstr "Altura"
+
+#: loco:59ea6fa3820ee936068b4567
+msgid "Max width"
+msgstr ""
+"Anchura máxima\n"
+
+#: loco:59ea704e820ee932068b4567
+msgid "Max Height"
+msgstr ""
+"Altura máxima\n"
+
+#: loco:59ea70cf820ee9fe028b456b
+msgid "Show popup title"
+msgstr "Mostrar título emergente"
+
+#: loco:59ea711e820ee9fe028b456e
+msgid "Dismiss on \"esc\" key"
+msgstr ""
+"Descartar en la tecla \"esc\"\n"
+
+#: loco:59ea71f6820ee913068b4568
+msgid "Show \"close\" button"
+msgstr "Mostrar el botón \"cerrar\""
+
+#: loco:59ea7267820ee936068b456a
+msgid "Dismiss on overlay click"
+msgstr "Descartar en superposición clic"
+
+#: loco:59ea72a1820ee9bc068b4569
+msgid "Dismiss on content click"
+msgstr "Descartar en contenido clic"
+
+#: loco:59ea7310820ee91c068b4569
+msgid "Popup opening delay"
+msgstr "Retraso de apertura emergente"
+
+#: loco:59ea73bc820ee932068b456c
+msgid "Change overlay color"
+msgstr "Cambiar el color de superposición"
+
+#: loco:59ea7416820ee9e40b8b4567
+msgid "Background opacity"
+msgstr "Opacidad de fondo"
+
+#: loco:59ea749a820ee933088b4569
+msgid "Enable"
+msgstr "Habilitar"
+
+#: loco:59ea74e1820ee9c70b8b4567
+msgid "Mode"
+msgstr "Modo"
+
+#: loco:59ea752d820ee9f80c8b4567
+msgid "Show Popup per days"
+msgstr ""
+"Mostrar ventana emergente por día\n"
+
+#: loco:59ea757e820ee99c0d8b4567
+msgid "Page level cookie saving"
+msgstr ""
+"Ahorro de cookies a nivel de página\n"
+
+#: loco:59ea75cc820ee99b0d8b4567
+msgid "Detect exit only from top bar"
+msgstr "Detectar salida solo desde la barra superior"
+
+#: loco:59ea76e3820ee99b0d8b456a
+msgid "Conditions"
+msgstr "Condiciones"

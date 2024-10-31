@@ -1,0 +1,544 @@
+/*
+    Colorbox Core Style
+    The following CSS is consistent between example themes and should not be altered.
+*/
+
+#yrmcolorbox.yrmcolorbox1, #yrmcboxOverlay.yrmcolorbox1,.yrmcolorbox1 #yrmcboxWrapper{position:absolute; top:0; left:0; z-index:2147483647; overflow:hidden;}
+
+.yrmcolorbox1 #yrmcboxWrapper {max-width:none;}
+
+#yrmcboxOverlay.yrmcolorbox1{position:fixed; width:100%; height:100%;}
+
+.yrmcolorbox1 #yrmcboxMiddleLeft,.yrmcolorbox1 #cboxBottomLeft{clear:left;}
+
+.yrmcolorbox1 #yrmcboxContent{position:relative;}
+
+.yrmcolorbox1 #yrmcboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+
+.yrmcolorbox1 #yrmcboxTitle{margin:0;}
+
+#yrmcboxLoadingOverlay.yrmcolorbox1,.yrmcolorbox1 #yrmcboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+
+.yrmcolorbox1 #yrmcboxPrevious,.yrmcolorbox1 #cboxNext,.yrmcolorbox1 #yrmcboxClose,.yrmcolorbox1 #yrmcboxSlideshow{cursor:pointer;}
+
+.yrmcolorbox1 .yrmcboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+
+.yrmcolorbox1 .yrmcboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+
+#yrmcolorbox.yrmcolorbox1,.yrmcolorbox1 #yrmcboxContent,.yrmcolorbox1 #yrmcboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/*
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+
+
+#yrmcboxOverlay.yrmcolorbox1{opacity: 0.9; filter: alpha(opacity = 90);}
+
+.yrmcboxOverlayBg.yrmcolorbox1 {background:url(../../img/colorbox1/overlay.png) repeat 0 0;}
+
+#yrmcolorbox.yrmcolorbox1{outline:0;}
+
+.yrmcolorbox1 #yrmcboxTopLeft{width:21px; height:21px; background:url(../../img/colorbox1/controls.png) no-repeat -101px 0;}
+
+.yrmcolorbox1 #yrmcboxTopRight{width:21px; height:21px; background:url(../../img/colorbox1/controls.png) no-repeat -130px 0;}
+
+.yrmcolorbox1 #yrmcboxBottomLeft{width:21px; height:21px; background:url(../../img/colorbox1/controls.png) no-repeat -101px -29px;}
+
+.yrmcolorbox1 #yrmcboxBottomRight{width:21px; height:21px; background:url(../../img/colorbox1/controls.png) no-repeat -130px -29px;}
+
+.yrmcolorbox1 #yrmcboxMiddleLeft{width:21px; background:url(../../img/colorbox1/controls.png) left top repeat-y;}
+
+.yrmcolorbox1 #yrmcboxMiddleRight{width:21px; background:url(../../img/colorbox1/controls.png) right top repeat-y;}
+
+.yrmcolorbox1 #yrmcboxTopCenter{height:21px; background:url(../../img/colorbox1/border.png) 0 0 repeat-x;}
+
+.yrmcolorbox1 #yrmcboxBottomCenter{height:21px; background:url(../../img/colorbox1/border.png) 0 -29px repeat-x;}
+
+.yrmcolorbox1 #yrmcboxContent{background:#fff; overflow:hidden;}
+
+.yrmcolorbox1 .yrmcboxIframe{background:#fff;}
+
+.yrmcolorbox1 #yrmcboxError{padding:50px; border:1px solid #ccc;}
+
+.yrmcolorbox1 #yrmcboxLoadedContent{margin-bottom:28px;}
+
+.yrmcolorbox1 #yrmcboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+
+.yrmcolorbox1 #yrmcboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+
+#yrmcboxLoadingOverlay.yrmcolorbox1{background:url(../../img/colorbox1/loading_background.png) no-repeat center center;}
+
+.yrmcolorbox1 #yrmcboxLoadingGraphic{background:url(../../img/colorbox1/loading.gif) no-repeat center center;}
+
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+
+.yrmcolorbox1  #yrmcboxPrevious,.yrmcolorbox1 #yrmcboxNext,.yrmcolorbox1 #yrmcboxSlideshow,.yrmcolorbox1 #yrmcboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+
+.yrmcolorbox1 #yrmcboxPrevious:active,.yrmcolorbox1 #yrmcboxNext:active,.yrmcolorbox1 #yrmcboxSlideshow:active,.yrmcolorbox1 #yrmcboxClose:active {outline:0;}
+
+.yrmcolorbox1 #yrmcboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+
+.yrmcolorbox1 #yrmcboxPrevious{position:absolute; bottom:0; left:0; background:url(../../img/colorbox1/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+
+.yrmcolorbox1 #yrmcboxPrevious:hover{background-position:-75px -25px;}
+
+.yrmcolorbox1 #yrmcboxNext{position:absolute; bottom:0; left:27px; background:url(../../img/colorbox1/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+
+.yrmcolorbox1 #yrmcboxNext:hover{background-position:-50px -25px;}
+
+.yrmcolorbox1 #yrmcboxClose{position:absolute;padding: 0 !important; bottom:0; right:0; background:url(../../img/colorbox1/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+
+.yrmcolorbox1 #yrmcboxClose:hover{background-position:-25px -25px;}
+
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+
+.yrmcolorbox1 .yrmcboxIE #yrmcboxTopLeft,
+
+.yrmcolorbox1 .yrmcboxIE #yrmcboxTopCenter,
+
+.yrmcolorbox1 .yrmcboxIE #yrmcboxTopRight,
+
+.yrmcolorbox1 .yrmcboxIE #yrmcboxBottomLeft,
+
+.yrmcolorbox1 .yrmcboxIE #yrmcboxBottomCenter,
+
+.yrmcolorbox1 .yrmcboxIE #yrmcboxBottomRight,
+
+.yrmcolorbox1 .yrmcboxIE #yrmcboxMiddleLeft,
+
+.yrmcolorbox1 .yrmcboxIE #yrmcboxMiddleRight {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+#yrmcboxLoadedContent img{
+	max-width: 100%;
+	height: auto;
+}
+
+/* Color box 2 css*/
+
+/*
+	Colorbox Core Style:
+	The following CSS is consistent between example themes and should not be altered.
+*/
+
+#yrmcbox.yrmcolorbox2, #yrmcboxOverlay.yrmcolorbox2,.yrmcolorbox2 #yrmcboxWrapper{position:absolute; top:0; left:0; z-index:2147483647; overflow:hidden;}
+
+#yrmcolorbox.yrmcolorbox2 {max-width:none;z-index: 9999999999999999999999999999999}
+
+#yrmcboxOverlay.yrmcolorbox2{position:fixed; width:100%; height:100%;}
+
+.yrmcolorbox2 #yrmcboxMiddleLeft,.yrmcolorbox2 #yrmcboxBottomLeft{clear:left;}
+
+.yrmcolorbox2 #yrmcboxContent{position:relative;}
+
+.yrmcolorbox2 #yrmcboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+
+.yrmcolorbox2 #yrmcboxTitle{margin:0;}
+
+#yrmcboxLoadingOverlay.yrmcolorbox2, #yrmcboxLoadingGraphic.yrmcolorbox2{position:absolute; top:0; left:0; width:100%; height:100%;}
+
+.yrmcolorbox2 #yrmcboxPrevious,.yrmcolorbox2 #yrmcboxNext,.yrmcolorbox2 #yrmcboxClose,.yrmcolorbox2 #yrmcboxSlideshow{cursor:pointer;}
+
+.yrmcolorbox2 .yrmcboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+
+.yrmcolorbox2 .yrmcboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+
+#yrmcbox.yrmcolorbox2,.yrmcolorbox2 #yrmcboxContent,.yrmcolorbox2 #yrmcboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/*
+	User Style:
+	Change the following styles to modify the appearance of Colorbox.  They are
+	ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+
+#yrmcboxOverlay.yrmcolorbox2{opacity: 0.9; filter: alpha(opacity = 90);}
+
+.yrmcboxOverlayBg.yrmcolorbox2 {background:#fff;}
+
+#yrmcbox.yrmcolorbox2{outline:0;}
+
+.yrmcolorbox2 #yrmcboxContent{margin-top:32px; overflow:visible; background:#000;}
+
+.yrmcolorbox2 .yrmcboxIframe{background:#fff;}
+
+.yrmcolorbox2 #yrmcboxError{padding:50px; border:1px solid #ccc;}
+
+.yrmcolorbox2 #yrmcboxLoadedContent{background:#000; padding:1px;}
+
+.yrmcolorbox2  #yrmcboxLoadingGraphic{background:url(../../img/colorbox2/loading.gif) no-repeat center center;}
+
+#yrmcboxLoadingOverlay.yrmcolorbox2{background:#000;}
+
+.yrmcolorbox2 #yrmcboxTitle{position:absolute; top:-22px; left:0; color:#000;}
+
+.yrmcolorbox2 #yrmcboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
+
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+
+.yrmcolorbox2 #yrmcboxPrevious,.yrmcolorbox2 #yrmcboxNext,.yrmcolorbox2 #yrmcboxSlideshow,.yrmcolorbox2 #yrmcboxClose {border:0; padding:0; margin:0; overflow:visible; text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px; background:url(../../img/colorbox2/controls.png) no-repeat 0 0;}
+
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+
+.yrmcolorbox2 #yrmcboxPrevious:active,.yrmcolorbox2 #yrmcboxNext:active,.yrmcolorbox2 #yrmcboxSlideshow:active,.yrmcolorbox2 #yrmcboxClose:active {outline:0;}
+
+.yrmcolorbox2 #yrmcboxPrevious{background-position:0px 0px; right:44px;}
+
+.yrmcolorbox2 #yrmcboxPrevious:hover{background-position:0px -25px;}
+
+.yrmcolorbox2  #yrmcboxNext{background-position:-25px 0px; right:22px;}
+
+.yrmcolorbox2  #yrmcboxNext:hover{background-position:-25px -25px;}
+
+.yrmcolorbox2 #yrmcboxClose{background-position:-50px 0px; right:0; padding: 0 !important;}
+
+#yrmcboxClose:hover{background-position:-50px -25px;}
+
+.yrmcolorbox2 .yrmcboxSlideshow_on #yrmcboxPrevious,.yrmcolorbox2 .yrmcboxSlideshow_off #yrmcboxPrevious{right:66px;}
+
+.yrmcolorbox2 .yrmcboxSlideshow_on #yrmcboxSlideshow{background-position:-75px -25px; right:44px;}
+
+.yrmcolorbox2 .yrmcboxSlideshow_on #yrmcboxSlideshow:hover{background-position:-100px -25px;}
+
+.yrmcolorbox2 .yrmcboxSlideshow_off #yrmcboxSlideshow{background-position:-100px 0px; right:44px;}
+
+.yrmcolorbox2 .yrmcboxSlideshow_off #yrmcboxSlideshow:hover{background-position:-75px -25px;}
+
+
+#yrmcboxLoadedContent img{
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* Color box 3 css */
+
+/*
+	Colorbox Core Style:
+	The following CSS is consistent between example themes and should not be altered.
+*/
+
+#yrmcolorbox.yrmcolorbox3, #yrmcboxOverlay.yrmcolorbox3,.yrmcolorbox3 #yrmcboxWrapper{position:absolute; top:0; left:0; z-index:2147483647; overflow:hidden;}
+
+.yrmcolorbox3 #yrmcboxWrapper {max-width:none;}
+
+#yrmcboxOverlay.yrmcolorbox3{position:fixed; width:100%; height:100%;}
+
+.yrmcolorbox3 #yrmcboxMiddleLeft,.yrmcolorbox3 #yrmcboxBottomLeft{clear:left;}
+
+.yrmcolorbox3 #yrmcboxContent{position:relative;}
+
+.yrmcolorbox3 #yrmcboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+
+.yrmcolorbox3 #yrmcboxTitle{margin:0;}
+
+#yrmcboxLoadingOverlay.yrmcolorbox3,.yrmcolorbox3 #yrmcboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+
+.yrmcolorbox3 #yrmcboxPrevious,.yrmcolorbox3 #yrmcboxNext,.yrmcolorbox3 #yrmcboxClose,.yrmcolorbox3 #yrmcboxSlideshow{cursor:pointer;}
+
+.yrmcolorbox3 .yrmcboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+
+.yrmcolorbox3 .yrmcboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+
+.yrmcolorbox3 #yrmcolorbox, #yrmcboxContent, #yrmcboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/*
+	User Style:
+	Change the following styles to modify the appearance of Colorbox.  They are
+	ordered & tabbed in a way that represents the nesting of the generated HTML.
+
+*/
+
+#yrmcboxOverlay.yrmcolorbox3 {opacity: 0.9; filter: alpha(opacity = 90);}
+
+.yrmcboxOverlayBg.yrmcolorbox3 {background:#000;}
+
+#yrmcolorbox.yrmcolorbox3{outline:0;}
+
+.yrmcolorbox3 #yrmcboxContent{margin-top:20px;background:#000;}
+
+.yrmcolorbox3.yrmcboxIframe{background:#fff;}
+
+.yrmcolorbox3 #yrmcboxError{padding:50px; border:1px solid #ccc;}
+
+.yrmcolorbox3 #yrmcboxLoadedContent{border:5px solid #000; background:#fff;}
+
+.yrmcolorbox3 #yrmcboxTitle{position:absolute; top:-20px; left:0; color:#ccc;}
+
+.yrmcolorbox3 #yrmcboxCurrent{position:absolute; top:-20px; right:0px; color:#ccc;}
+
+.yrmcolorbox3 #yrmcboxLoadingGraphic{background:url(../../img/colorbox3/loading.gif) no-repeat center center;}
+
+
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+
+.yrmcolorbox3 #yrmcboxPrevious,.yrmcolorbox3 #yrmcboxNext,.yrmcolorbox3 #yrmcboxSlideshow,.yrmcolorbox3 #yrmcboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+
+.yrmcolorbox3 #yrmcboxPrevious:active,.yrmcolorbox3 #yrmcboxNext:active,.yrmcolorbox3 #yrmcboxSlideshow:active,.yrmcolorbox3 #yrmcboxClose:active {outline:0;}
+
+.yrmcolorbox3 #yrmcboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
+
+.yrmcolorbox3 #yrmcboxPrevious{position:absolute; top:50%; left:5px; margin-top:-32px; background:url(../../img/colorbox3/controls.png) no-repeat top left; width:28px; height:65px; text-indent:-9999px;}
+
+.yrmcolorbox3 #yrmcboxPrevious:hover{background-position:bottom left;}
+
+.yrmcolorbox3 #yrmcboxNext{position:absolute; top:50%; right:5px; margin-top:-32px; background:url(../../img/colorbox3/controls.png) no-repeat top right; width:28px; height:65px; text-indent:-9999px;}
+
+.yrmcolorbox3 #yrmcboxNext:hover{background-position:bottom right;}
+
+.yrmcolorbox3 #yrmcboxClose{position:absolute; top:5px; right:5px;padding: 0 !important; display:block; background:url(../../img/colorbox3/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
+
+.yrmcolorbox3 #yrmcboxClose:hover{background-position:bottom center;}
+
+
+#yrmcboxLoadedContent img{
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* Color box 4 css */
+
+/*
+	Colorbox Core Style:
+	The following CSS is consistent between example themes and should not be altered.
+*/
+#yrmcolorbox.yrmcolorbox4, #yrmcboxOverlay.yrmcolorbox4,.yrmcolorbox4 #yrmcboxWrapper{position:absolute; top:0; left:0; z-index:2147483647; overflow:hidden;}
+
+.yrmcolorbox4 #yrmcboxWrapper {max-width:none;}
+
+#yrmcboxOverlay.yrmcolorbox4{position:fixed; width:100%; height:100%;}
+
+.yrmcolorbox4 #yrmcboxMiddleLeft,.yrmcolorbox4 #yrmcboxBottomLeft{clear:left;}
+
+.yrmcolorbox4 #yrmcboxContent{position:relative;}
+
+.yrmcolorbox4 #yrmcboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+
+.yrmcolorbox4 #yrmcboxTitle{margin:0;}
+
+#yrmcboxLoadingOverlay.yrmcolorbox4,.yrmcolorbox4 #yrmcboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+
+.yrmcolorbox4 #yrmcboxPrevious,.yrmcolorbox4 #yrmcboxNext,.yrmcolorbox4 #yrmcboxClose,.yrmcolorbox4 #yrmcboxSlideshow{cursor:pointer;}
+
+.yrmcolorbox4 .yrmcboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+
+.yrmcolorbox4 .yrmcboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+
+#yrmcolorbox.yrmcolorbox4,.yrmcolorbox4 #yrmcboxContent,.yrmcolorbox4 #yrmcboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/*
+	User Style:
+	Change the following styles to modify the appearance of Colorbox. They are
+	ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+
+#yrmcboxOverlay.yrmcolorbox4{opacity: 0.9; filter: alpha(opacity = 90);}
+
+.yrmcboxOverlayBg.yrmcolorbox4 {background:#fff;}
+
+#yrmcolorbox.yrmcolorbox4{outline:0;}
+
+.yrmcolorbox4 #yrmcboxTopLeft{width:25px; height:25px; background:url(../../img/colorbox4/border1.png) no-repeat 0 0;}
+
+.yrmcolorbox4 #yrmcboxTopCenter{height:25px; background:url(../../img/colorbox4/border1.png) repeat-x 0 -50px;}
+
+.yrmcolorbox4 #yrmcboxTopRight{width:25px; height:25px; background:url(../../img/colorbox4/border1.png) no-repeat -25px 0;}
+
+.yrmcolorbox4 #yrmcboxBottomLeft{width:25px; height:25px; background:url(../../img/colorbox4/border1.png) no-repeat 0 -25px;}
+
+.yrmcolorbox4 #yrmcboxBottomCenter{height:25px; background:url(../../img/colorbox4/border1.png) repeat-x 0 -75px;}
+
+.yrmcolorbox4 #yrmcboxBottomRight{width:25px; height:25px; background:url(../../img/colorbox4/border1.png) no-repeat -25px -25px;}
+
+.yrmcolorbox4 #yrmcboxMiddleLeft{width:25px; background:url(../../img/colorbox4/border2.png) repeat-y 0 0;}
+
+.yrmcolorbox4 #yrmcboxMiddleRight{width:25px; background:url(../../img/colorbox4/border2.png) repeat-y -25px 0;}
+
+.yrmcolorbox4 #yrmcboxContent{background:#fff; overflow:hidden;}
+
+.yrmcolorbox4 .yrmcboxIframe{background:#fff;}
+
+.yrmcolorbox4 #yrmcboxError{padding:50px; border:1px solid #ccc;}
+
+.yrmcolorbox4 #yrmcboxLoadedContent{margin-bottom:20px;}
+
+.yrmcolorbox4 #yrmcboxTitle{position:absolute; bottom:0px; left:0; text-align:center; width:100%; color:#999;}
+
+.yrmcolorbox4 #yrmcboxCurrent{position:absolute; bottom:0px; left:100px; color:#999;}
+
+#yrmcboxLoadingOverlay.yrmcolorbox4{background:#fff url(../../img/colorbox4/loading.gif) no-repeat 5px 5px;}
+
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+.yrmcolorbox4 #yrmcboxPrevious,.yrmcolorbox4 #yrmcboxNext,.yrmcolorbox4 #yrmcboxSlideshow,.yrmcolorbox4 #yrmcboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+
+
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+
+.yrmcolorbox4 #yrmcboxPrevious:active,.yrmcolorbox4 #yrmcboxNext:active,.yrmcolorbox4 #yrmcboxSlideshow:active,.yrmcolorbox4 #yrmcboxClose:active {outline:0;}
+
+.yrmcolorbox4 #yrmcboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
+
+.yrmcolorbox4 #yrmcboxPrevious{position:absolute; bottom:0px; left:0; color:#444;}
+
+.yrmcolorbox4 #yrmcboxNext{position:absolute; bottom:0px; left:63px; color:#444;}
+
+.yrmcolorbox4 #yrmcboxClose{position:absolute; bottom:0; right:0; display:block;padding: 0 !important; color:#444;}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+
+
+.yrmcolorbox4 .yrmcboxIE #yrmcboxTopLeft,
+
+.yrmcolorbox4 .yrmcboxIE #yrmcboxTopCenter,
+
+.yrmcolorbox4 .yrmcboxIE #yrmcboxTopRight,
+
+.yrmcolorbox4 .yrmcboxIE #yrmcboxBottomLeft,
+
+.yrmcolorbox4 .yrmcboxIE #yrmcboxBottomCenter,
+
+.yrmcolorbox4 .yrmcboxIE #yrmcboxBottomRight,
+
+.yrmcolorbox4 .yrmcboxIE #yrmcboxMiddleLeft,
+
+.yrmcolorbox4 .yrmcboxIE #yrmcboxMiddleRight {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+
+}
+
+#yrmcboxLoadedContent img{
+	max-width: 100%;
+	height: auto;
+}
+
+/* Color box 5 css */
+
+/*
+    Colorbox Core Style:
+	The following CSS is consistent between example themes and should not be altered.
+*/
+
+#yrmcolorbox.yrmcolorbox5, #yrmcboxOverlay.yrmcolorbox5,.yrmcolorbox5 #yrmcboxWrapper{position:absolute; top:0; left:0; z-index:2147483647; overflow:hidden;}
+
+.yrmcolorbox5 #yrmcboxWrapper {max-width:none;}
+
+#yrmcboxOverlay.yrmcolorbox5{position:fixed; width:100%; height:100%;}
+
+.yrmcolorbox5 #yrmcboxMiddleLeft,.yrmcolorbox5 #yrmcboxBottomLeft{clear:left;}
+
+.yrmcolorbox5 #yrmcboxContent{position:relative;}
+
+.yrmcolorbox5 #yrmcboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+
+.yrmcolorbox5 #yrmcboxTitle{margin:0;}
+
+#yrmcboxLoadingOverlay.yrmcolorbox5,.yrmcolorbox5 #yrmcboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+
+.yrmcolorbox5 #yrmcboxPrevious,.yrmcolorbox5 #yrmcboxNext,.yrmcolorbox5 #yrmcboxClose,.yrmcolorbox5 #yrmcboxSlideshow{cursor:pointer;}
+
+.yrmcolorbox5 .yrmcboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+
+.yrmcolorbox5 .yrmcboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+
+#yrmcolorbox.yrmcolorbox5,.yrmcolorbox5 #yrmcboxContent,.yrmcolorbox5 #yrmcboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+
+/*
+	User Style:
+	Change the following styles to modify the appearance of Colorbox.  They are
+	ordered & tabbed in a way that represents the nesting of the generated HTML
+
+*/
+
+#yrmcboxOverlay.yrmcolorbox5{opacity: 0.9; filter: alpha(opacity = 90);}
+
+.yrmcboxOverlayBg.yrmcolorbox5 {background:#000;}
+
+#yrmcolorbox.yrmcolorbox5{outline:0;}
+
+.yrmcolorbox5 #yrmcboxTopLeft{width:14px; height:14px; background:url(../../img/colorbox5/controls.png) no-repeat 0 0;}
+
+.yrmcolorbox5 #yrmcboxTopCenter{height:14px; background:url(../../img/colorbox5/border.png) repeat-x top left;}
+
+.yrmcolorbox5 #yrmcboxTopRight{width:14px; height:14px; background:url(../../img/colorbox5/controls.png) no-repeat -36px 0;}
+
+.yrmcolorbox5 #yrmcboxBottomLeft{width:14px; height:43px; background:url(../../img/colorbox5/controls.png) no-repeat 0 -32px;}
+
+.yrmcolorbox5 #yrmcboxBottomCenter{height:43px; background:url(../../img/colorbox5/border.png) repeat-x bottom left;}
+
+.yrmcolorbox5 #yrmcboxBottomRight{width:14px; height:43px; background:url(../../img/colorbox5/controls.png) no-repeat -36px -32px;}
+
+.yrmcolorbox5 #yrmcboxMiddleLeft{width:14px; background:url(../../img/colorbox5/controls.png) repeat-y -175px 0;}
+
+.yrmcolorbox5 #yrmcboxMiddleRight{width:14px; background:url(../../img/colorbox5/controls.png) repeat-y -211px 0;}
+
+.yrmcolorbox5 #yrmcboxContent{background:#fff; overflow:visible;}
+
+.yrmcolorbox5 .yrmcboxIframe{background:#fff;}
+
+.yrmcolorbox5 #yrmcboxError{padding:50px; border:1px solid #ccc;}
+
+.yrmcolorbox5 #yrmcboxLoadedContent{margin-bottom:5px;}
+
+#yrmcboxLoadingOverlay.yrmcolorbox5{background:url(../../img/colorbox5/loading_background.png) no-repeat center center;}
+
+.yrmcolorbox5 #yrmcboxLoadingGraphic{background:url(../../img/colorbox5/loading.gif) no-repeat center center;}
+
+.yrmcolorbox5 #yrmcboxTitle{position:absolute; bottom:-25px; left:0; text-align:center; width:100%; font-weight:bold; color:#7C7C7C;}
+
+.yrmcolorbox5 #yrmcboxCurrent{position:absolute; bottom:-25px; left:58px; font-weight:bold; color:#7C7C7C;}
+
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+
+.yrmcolorbox5 #yrmcboxPrevious,.yrmcolorbox5 #yrmcboxNext,.yrmcolorbox5 #yrmcboxSlideshow,.yrmcolorbox5 #yrmcboxClose {border:0; padding:0; margin:0; overflow:visible;  position:absolute; bottom:-29px; background:url(../../img/colorbox5/controls.png) no-repeat 0px 0px; width:23px; height:23px; text-indent:-9999px;}
+
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+
+.yrmcolorbox5 #yrmcboxPrevious:active,.yrmcolorbox5 #yrmcboxNext:active,.yrmcolorbox5 #yrmcboxSlideshow:active,.yrmcolorbox5 #yrmcboxClose:active {outline:0;}
+
+.yrmcolorbox5 #yrmcboxPrevious{left:0px; background-position: -51px -25px;}
+
+.yrmcolorbox5 #yrmcboxPrevious:hover{background-position:-51px 0px;}
+
+.yrmcolorbox5 #yrmcboxNext{left:27px; background-position:-75px -25px;}
+
+.yrmcolorbox5 #yrmcboxNext:hover{background-position:-75px 0px;}
+
+.yrmcolorbox5 #yrmcboxClose{right:0; background-position:-100px -25px;padding: 0 !important;}
+
+.yrmcolorbox5 #yrmcboxClose:hover{background-position:-100px 0px;}
+
+.yrmcolorbox5 .yrmcboxSlideshow_on #yrmcboxSlideshow{background-position:-125px 0px; right:27px;}
+
+.yrmcolorbox5 .yrmcboxSlideshow_on #yrmcboxSlideshow:hover{background-position:-150px 0px;}
+
+.yrmcolorbox5 .yrmcboxSlideshow_off #yrmcboxSlideshow{background-position:-150px -25px; right:27px;}
+
+.yrmcolorbox5 .yrmcboxSlideshow_off #yrmcboxSlideshow:hover{background-position:-125px 0px;}
+
+#yrmcboxLoadedContent img{
+	max-width: 100%;
+	height: auto;
+}
+
+.ypm-disable-page-scrolling {
+	position: fixed;
+	height: 100%;
+	max-height: 100%;
+}
